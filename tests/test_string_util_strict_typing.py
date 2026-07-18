@@ -11,10 +11,10 @@ import sys
 # Setup paths
 THIS_FILE = pathlib.Path(__file__).resolve()
 REPO_ROOT = THIS_FILE.parents[5]
-PYKOTOR_SRC = REPO_ROOT / "Libraries" / "PyKotor" / "src"
+VENDOR_SRC = REPO_ROOT / "Libraries" / "VendorLib" / "src"
 UTILITY_SRC = REPO_ROOT / "Libraries" / "Utility" / "src"
 
-for path in (PYKOTOR_SRC, UTILITY_SRC):
+for path in (VENDOR_SRC, UTILITY_SRC):
     as_posix = path.as_posix()
     if as_posix not in sys.path:
         sys.path.insert(0, as_posix)

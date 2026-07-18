@@ -1,19 +1,14 @@
 # python-wrapped-str
 
-`WrappedStr` / `CaseInsensitiveWrappedStr` and string helpers (`striprtf`, `ireplace`, etc.).
+String helpers built around a mutable/wrapped string type (`WrappedStr` and friends).
 
-Docs/tests sometimes call this **MutableStr**; the class is an immutable `str` subclass with delegated methods.
+Canonical import path is `python_wrapped_str.string_util`. There's also a smaller `misc_string` package of leftovers if you only need a couple of helpers.
 
 ## Install
 
 ```bash
-pip install -e .
 pip install git+https://github.com/bodencrouch/python-wrapped-str.git
 ```
-
-## Origin
-
-Extracted from [PyKotor](https://github.com/bodencrouch/PyKotor) `utility/string_util.py` and `utility/common/misc_string/`. Canonical API is `python_wrapped_str.string_util`; `misc_string` keeps the alternate smaller modules.
 
 ## License
 
